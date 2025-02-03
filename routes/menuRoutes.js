@@ -96,4 +96,5 @@ router.delete('/:id',async(req,res)=>{
 });
 
 // -------------------------------------------------------------------------
+// export router into server.js file.
 module.exports = router;
