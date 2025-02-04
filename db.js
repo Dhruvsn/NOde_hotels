@@ -14,7 +14,7 @@ mongoose.connect(mongoURL,{
 
 
 // Get the defauld connection
-// Mongoose maintains a default connection object representing the MongoDB connection.
+// Mongoose maintains a default connection obj representing the MongoDB connection.
 const db = mongoose.connection;
 
 // Define event listeners for database connection
