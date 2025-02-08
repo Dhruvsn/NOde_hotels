@@ -3,7 +3,7 @@ const app = express();
 const db = require('./db');
 require('dotenv').config();
 const passport = require('./auth');
-
+  
 
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
@@ -40,7 +40,7 @@ const personRoutes = require('./routes/personRoutes');
 
 
 //Use the routers
-app.use('/person',localAuthMiddleware,personRoutes);
+app.use('/person',personRoutes);
 app.use('/menu',menuRoutes);
 
 
